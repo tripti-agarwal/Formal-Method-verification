@@ -1,0 +1,45 @@
+
+Comments and Feedback
+
+1) 20 pts given
+   Good work and clear explanations
+
+2) 20 pts given
+   Good work and clear explanations
+
+3) 0 points given at the moment
+
+   Reason: I don't understand how setting a[1] to 1 is the right thing to do in this sorting routine. Can you plz explain before I give you the points?
+
+   Also the fixed file appears not to be there. When I look at lines 31 and 42, I don't see t being assigned 1.
+
+   I need to make sure I understand your fix.
+
+   Also, I would expect there to be more states stored
+   for an array of size 9.
+
+4) 0 points given at the moment.
+
+   (Minor: It is dining and not dinning)
+
+   I don't understand your fix fully well. It is not explained in the PDF submission. I can look at the code and figure out.
+
+   Also when I looked at your solution, I find that you are not following the requirement. I say this
+
+    One way to avoid such livelocks is to break symmetry
+    (make one philosopher reach for the right fork first).
+    Implement this solution.
+
+   Whereas you chose to make all even philosophers grab the right and the odd grab the left. That can work (I can believe that) but you must do what's asked. Then there was a follow-up discussion on Piazza. Go look at the new clearly-stated specification in Lec5 where I've also pushed the contrarian phil's code with a mention of the liveness checks. Please follow that.
+
+5) 20 pts given
+   Good job initializing at random and plotting!
+
+--
+
+
+
+
+
+
+
