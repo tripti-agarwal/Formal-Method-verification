@@ -1,0 +1,21 @@
+10 points given
+
+Comments
+
+1) 8 points given
+   Good solution
+
+2) 2 points given
+   Good Solution
+
+3) 0 points given
+   Once count is set, it never gets reset in the do/od.
+   This is "fixing" the issue but killing all future
+   behavior of the handler (it is unable to take in any
+   future behavior).
+
+   Sorry, this fix is plain incorrect.
+--
+
+
+   
