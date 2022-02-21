@@ -1,0 +1,15 @@
+>>>> For question 3 Assignment 2 (bubble sort):
+The fix is that the guard at lines 31 and 42 of the buggy code was trying to determine the value of a[1] and based on that will execute lines 32 to 41.  
+Whereas the code should run different values of the array and check whether the whole array is traversed or not. 
+(When the guard reaches the first index, the array is sorted). For this, we create a new variable k (mainly because t is used in other places in the code,
+and not to mess up with other parts of the code) and assign its initial value as a max index (see line 31 of the fixed code). And then we keep looping over 
+the do od statements till the value of k == 1 (that is the whole array is sorted, see line 45). If k!=1, we sort the array and decrement the value of k by 1 
+(see line 35), as one element is sorted as is at the end of the array. This process keeps on repeating. Please find the attachment for this solution,
+also on Github (https://github.com/tripti-agarwal/Formal-Method-verification/blob/main/Assignment2/bubblesort.pml)
+
+
+
+>>>> For question 4 Assignment 2 (Dining Philosopher)I have made the relevant changes in the code, where the first philosopher is breaking the symmetry. 
+Also, I fiddled with prop1 2 and 3 (as in dp_contrarian.pml), for _pid 1,2, and 3 which manages that the never automata (or LTL) is true. If any of the 
+processes enter the never automata then it might result in an error.Please find the attachment for this solution (DiningPhill.pml), now also on Github 
+(https://github.com/tripti-agarwal/Formal-Method-verification/blob/main/Assignment2/DiningPhil.pml)
