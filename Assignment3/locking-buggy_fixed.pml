@@ -113,17 +113,18 @@ proctype acquire(PID me)
 proctype handle(int me)
 {
 	    PID requester;
+		   byte count;
 	
     do
     :: atomic {
-            mutex[me] == 0 && len(waiters[me]) != qlen[me] 
+            mutex[me] == 0  && request[me]?[requester]  && len(q_len_ch[me]) == 0
                  ->
             mutex[me] = 1;
             request[me] ? requester
             
         };
         if
-        :: po[me] != me  && len(waiters[me]) != qlen[me] -> request[po[me]] ! requester
+        :: po[me] != me  -> request[po[me]] ! requester
         :: po[me] == me && locked[me] ->
                     waiters[me] ! requester;
                     qlen[me] = qlen[me] + 1;
