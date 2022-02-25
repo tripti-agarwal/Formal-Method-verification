@@ -1,0 +1,69 @@
+tripti@lemma:~/Desktop/SoftwareVerification_6110/Assignment 4$ make -f make_rumur.mk MODEL=rivercrossing.m 
+rumur rivercrossing.m --verbose --output _rivercrossing.c
+using numerical type uint8_t as value type
+gcc -march=native -O3 _rivercrossing.c -lpthread -o _rivercrossing
+./_rivercrossing -vdfs -tv -h 
+Memory usage:
+
+	* The size of each state is 8 bits (rounded up to 1 bytes).
+	* The size of the hash table is 65536 slots.
+
+Progress Report:
+
+The following is the error trace for the error:
+
+	invariant 1 failed
+
+Startstate 1 fired.
+m:false
+w:false
+g:false
+c:false
+----------
+
+Rule "M and G move safely" fired.
+m:true
+g:true
+----------
+
+Rule "M move safely" fired.
+m:false
+----------
+
+Rule "M and W move safely" fired.
+m:true
+w:true
+----------
+
+Rule "M and G move safely" fired.
+m:false
+g:false
+----------
+
+Rule "M and C move safely" fired.
+m:true
+c:true
+----------
+
+Rule "M move safely" fired.
+m:false
+----------
+
+Rule "M and G move safely" fired.
+m:true
+g:true
+----------
+
+End of the error trace.
+
+
+==========================================================================
+
+Status:
+
+	1 error(s) found.
+
+State Space Explored:
+
+	9 states, 18 rules fired in 0s.
+make: *** [make_rumur.mk:8: run] Error 1
