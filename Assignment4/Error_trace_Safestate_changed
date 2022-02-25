@@ -1,0 +1,37 @@
+tripti@lemma:~/Desktop/SoftwareVerification_6110/Assignment 4$ make -f make_rumur.mk MODEL=rivercrossing_safeState_changed.m 
+rumur rivercrossing_safeState_changed.m --verbose --output _rivercrossing_safeState_changed.c
+using numerical type uint8_t as value type
+gcc -march=native -O3 _rivercrossing_safeState_changed.c -lpthread -o _rivercrossing_safeState_changed
+./_rivercrossing_safeState_changed -vdfs -tv -h 
+Memory usage:
+
+	* The size of each state is 10 bits (rounded up to 2 bytes).
+	* The size of the hash table is 65536 slots.
+
+Progress Report:
+
+The following is the error trace for the error:
+
+	deadlock
+
+Startstate 1 fired.
+m:false
+w:false
+g:false
+c:false
+l:false
+----------
+
+End of the error trace.
+
+
+==========================================================================
+
+Status:
+
+	1 error(s) found.
+
+State Space Explored:
+
+	1 states, 0 rules fired in 0s.
+make: *** [make_rumur.mk:8: run] Error 1
