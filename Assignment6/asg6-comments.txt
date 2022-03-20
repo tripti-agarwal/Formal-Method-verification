@@ -1,0 +1,12 @@
+
+I await the rest of Asg-6.
+
+--
+
+The project description is good and I look forward to your steady progress. Why network flows
+(just curious)? I'm sure it will be a really insightful example. Maybe we can try some
+traditional loop-based iterative (computational) code, and perhaps also some memory (heap)
+related codes, so that we gain experience with various plugins.
+
+
+--
