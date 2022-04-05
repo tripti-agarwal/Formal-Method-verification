@@ -1,0 +1,35 @@
+100 points given. Very good effort overall
+
+---
+
+Comments
+
+Good analysis of the problems. In particular:
+
+1. preorders and partial orders in Alloy
+   Nicely illustrated steps
+
+2. The store-buffer issue for TSO violations
+   Nice explanations given
+
+3. Java volatiles
+   Would have been nice to see a summary result stating what happens when
+   only one variable (req or ack) is made volatile
+
+4. BFS and DFS pseudo-codes. 
+
+   Good details! Very thoroughly documented and linked to PDF!
+   
+5. Double-checked locking
+   Good observations about the double-checked locking
+   in Java
+
+Overall, thorough work for which I'm giving extra points!
+--
+
+
+
+
+
+
+   
