@@ -1,0 +1,16 @@
+Points: 110 out of 100
+
+Very thorough answers to all questions!
+
+1. Great summary of Jackson's CACM article
+
+2. Great summary of the Alloy tutorials, with amazing screenshots
+   Great to see you get 10/10 for Alloy! Not only that, you summarized
+   the tutorials well
+
+3. Fantastic summary of the "red book" of Alloy
+   Good study of tree descriptions and clear answers
+
+4. Very good study of Quicksort via KLEE
+
+
