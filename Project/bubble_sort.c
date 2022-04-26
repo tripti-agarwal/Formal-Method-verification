@@ -1,7 +1,7 @@
 // C program for implementation of Bubble sort
 #include <stdio.h>
 #include <limits.h>
-//Predicat for sorted array
+//Predicate for sorted array
 /*@
 predicate sorted{L}(int* a, integer low, integer high) = 
 	\forall int k;
