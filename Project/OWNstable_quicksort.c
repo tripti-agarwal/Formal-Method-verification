@@ -69,7 +69,8 @@ high --> Ending index */
 requires \valid(arr + (low .. high-1)) && \separated(arr + (low ..high-1));
 requires 0 <= low <= high <= INT_MAX;
 decreases (high-1) - low;
-assigns *(arr + (low .. high-1));
+
+
 */
 
 // [low, high)
@@ -94,24 +95,39 @@ void quickSort(int *arr, int low, int high)
 		
 		while (k != high) {
 			if (arr[k] < pivot) {
+				//@ assert arr[k] < pivot;
+                                //@ assert \valid(arr+i);
+                                //@ assert \valid(arr+j);
 				swap(&arr[i], &arr[k]);
 				++i;
-				if (i > j) 
+                                //@ assert low <= i;
+				if (i > j) {
+					//@ assert i > j;
 					++j;
+				}
 				
-				if (j > k) 
+				if (j > k) {
+					//@ assert j > k;
 					++k;
+				}
 				
 			} 
 			else if (arr[k] == pivot) {
+				//@ assert arr[k] == pivot;
+				//@ assert \valid(arr+j);
+				//@ assert \valid(arr+k);
 				swap(&arr[j], &arr[k]);
 				++j;
-				if (j > k) 
+				if (j > k) {
+					//@ assert j > k;
 					++k;
+				}
 				
 			} 
-			else if (arr[k] > pivot) 
+			else if (arr[k] > pivot) {
+				//@ assert arr[k] > pivot;
 				++k;
+			}
 			
 		}
 		quicksort(arr, low, i);
