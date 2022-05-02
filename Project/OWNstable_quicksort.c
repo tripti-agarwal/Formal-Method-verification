@@ -76,8 +76,13 @@ decreases (high-1) - low;
 // [low, high)
 void quickSort(int *arr, int low, int high)
 {
+	//@ assert Permut{Here, Pre}(arr, low, high-1);
 	if (low != high) {
+		//@ assert Permut{Here, Pre}(arr, low, high);
+		
+		
 		int pivot = arr[low];
+		//@ assert pivot == arr[low];
 		int i = low, j = low, k = low;
 
 		/*@
@@ -130,11 +135,16 @@ void quickSort(int *arr, int low, int high)
 			}
 			
 		}
+		
+		//@ assert \forall integer k; low <= k < i ==> arr[k] < pivot;
 		quicksort(arr, low, i);
 		quicksort(arr, j, high);
+		
 	}
-	else 
+	else{ 
+		//@ assert sorted{Here}(arr, low, high);
 		return;
+	}
 	
 
 }
