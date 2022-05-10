@@ -1,0 +1,8 @@
+  - Assignments : Strong performance in the end (some submissions were improved)
+  - Project
+    > The project was well-executed
+    > The level of difficulty of the project was good
+    > Towards the end, the student carried out verification in Frama-C
+    > The presentation was good
+  - Grade is an A- on a relative scale (with a chance to improve)
+  
